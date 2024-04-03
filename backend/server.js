@@ -1,11 +1,14 @@
+require("dotenv").config();
+
 const textgears = require('textgears-api');
 const express = require("express");
 const app = express();
 const cors = require("cors");
 
+
 //connectDB();
 app.use(cors({
-    origin: [`http://localhost:3000`],
+    origin: process.env.CLIENT_URL,
     optionsSuccessStatus: 200,
     credentials: true
 }

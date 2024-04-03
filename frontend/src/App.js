@@ -23,7 +23,7 @@ const App = () => {
                 alert("Text cannot be empty");
             }
             else {
-                const res = await axios.post(`http://localhost:8080/checkerrors`,
+                const res = await axios.post(`${process.env.REACT_APP_URL}checkerrors`,
                     { data: transcript }, { validateStatus: false, withCredentials: true });
                 await  setApidata(res.data.data.response.errors);
                 await setApiotherdata(res.data);
