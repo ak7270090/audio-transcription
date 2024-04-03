@@ -61,5 +61,5 @@ app.post("/checkerrors", async (req, res) => {
 
 
 //server
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listenting on port ${port}...`));
