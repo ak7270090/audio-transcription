@@ -16,6 +16,10 @@ app.use(cors({
 app.use(express.json());
 
 //route to check error
+app.get("/",async(req,res)=>{
+    res.json("api running");
+});
+
 app.post("/checkerrors", async (req, res) => {
 
 
