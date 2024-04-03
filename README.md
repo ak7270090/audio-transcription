@@ -18,13 +18,16 @@
 
 
 >Homepage</b>
-![localhost_3000_ (1)](https://github.com/ak7270090/audio-transcription/assets/110425616/09d8f724-50f7-4058-9055-c25ff5fe2b7b)
+
+![localhost_3000_ (1)](https://github.com/ak7270090/audio-transcription/assets/110425616/9a8c7d13-145f-4e20-bb9f-dbd8cc33b59e)
 
 <br>
 
 
 >backend result of grammatical error in speech</b>
-![localhost_3000_ (2)](https://github.com/ak7270090/audio-transcription/assets/110425616/7043ce92-756d-473a-b922-2b083b88b8b8)
+
+ ![localhost_3000_ (2)](https://github.com/ak7270090/audio-transcription/assets/110425616/19aa902b-d4a1-43ec-b5e6-7149d4473c86)
+
 <br>
 
 
