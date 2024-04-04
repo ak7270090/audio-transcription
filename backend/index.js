@@ -1,10 +1,8 @@
-require("dotenv").config();
-
 const textgears = require('textgears-api');
 const express = require("express");
 const app = express();
 const cors = require("cors");
-
+require("dotenv").config();
 
 //connectDB();
 app.use(cors({
@@ -16,7 +14,7 @@ app.use(cors({
 app.use(express.json());
 
 //route to check error
-app.get("/",async(req,res)=>{
+app.get("/",(req,res)=>{
     res.status(200).send("api running");
 });
 
