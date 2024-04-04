@@ -11,6 +11,16 @@ app.use(cors({
     credentials: true
 }
 ));
+app.use(function(req, res, next) {
+	res.header('Content-Type', 'application/json;charset=UTF-8')
+	res.header('Access-Control-Allow-Credentials', true)
+	res.header(
+	  'Access-Control-Allow-Headers',
+	  'Origin, X-Requested-With, Content-Type, Accept'
+	)
+	next()
+  });
+  
 app.use(express.json());
 
 //route to check error
@@ -59,5 +69,5 @@ app.post("/checkerrors", async (req, res) => {
 
 
 //server
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 app.listen(port, () => console.log(`Listenting on port ${port}...`));

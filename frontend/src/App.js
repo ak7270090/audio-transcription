@@ -24,6 +24,7 @@ const App = () => {
             }
             else {
                 const res = await axios.post(`${process.env.REACT_APP_URL}checkerrors`,
+                //const res = await axios.post(`https://audio-transcription-egg9.vercel.app/checkerrors`,
                     { data: transcript }, { validateStatus: false, withCredentials: true });
                 await  setApidata(res.data.data.response.errors);
                 await setApiotherdata(res.data);
